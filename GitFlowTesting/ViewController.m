@@ -16,10 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (IBAction)convertTemp
+{
+    float celcius=[self.celciusTempInput.text floatValue];
+    float farenhite=(celcius*9)/5+32;
+    self.farenhiteTempOutput.text=[NSString stringWithFormat:@"%.2f",farenhite];
+
+
+}
+
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

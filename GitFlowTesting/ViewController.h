@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+
+@property(nonatomic,weak) IBOutlet UITextField *celciusTempInput;
+@property(nonatomic,weak) IBOutlet UILabel *farenhiteTempOutput;
+
+- (IBAction)convertTemp;
 @end
 
